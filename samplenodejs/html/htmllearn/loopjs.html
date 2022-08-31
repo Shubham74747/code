@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+</head>
+
+<body>
+</body>
+
+<script>
+
+// FOR LOOP
+    // // for (var count = 0; count<10; count++){
+    // //     document.write(count + "<br>")
+    // // }
+
+    // // reverse
+
+    //  for (var count = 10; count > -10; count--) {
+    //         document.write(count + "<br>")
+    //     }
+
+// while loop
+//     var count = 0;
+//     while(count<10){
+//         document.write(count + "<br>");
+//         count++;
+//     }
+
+// 
+     var cars = ["car1", "car2", "car3", "car4","car5","car6"];
+     cars.forEach(car);
+     function car(item,index,array) {
+        //  document.write(index + "=>" + item + "<br>");
+        array[index] = item + "0"
+     }
+
+     cars.forEach(after);
+     function after (item,index){
+         document.write(index + "=>" + item + "<br>");
+     }
+</script>
+
+</html>

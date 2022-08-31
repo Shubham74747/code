@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+    <style>
+        body {
+            background-color: slateblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" name="first" id="first" step="any" />
+    <select id="ope"> 
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" name = "second" id="second" step="any">
+    <br>
+    <br>
+    <button onclick="cal()"> Calculator</button>
+    <input type="text" name="" id="res" readonly =""/> 
+</body>
+<script type="text/javascript">
+     function cal(){
+         var opr1 = document.getElementById('first').value;
+         var opr2 = document.getElementById('second').value;
+         var ope = document.getElementById('ope').value;
+         if(ope == '+') {
+             var res = parseInt(opr1) + parseInt(opr2);
+         }
+         if (ope == '-') {
+             var res = parseInt(opr1) - parseInt(opr2);
+         }
+         if (ope == '*') {
+             var res = parseInt(opr1) * parseInt(opr2);
+         }
+         if (ope == '/'){
+              var res = parseInt(opr1) / parseInt(opr2);
+         }      
+         document.getElementById('res').value = res;
+        }
+
+</script>
+</html>
